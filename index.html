@@ -3,23 +3,24 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Visitor Contact Information Form</title>
+    <title>Web Registration Form</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
 
 <body>
-<header>
-    <h1 class="header h1">Visitor Contact Information Form</h1>
-    <img src="./assets/images/welcome visitor.png" alt="welcome visitor image" class="center" />
-</header>
-
-<main>
-
-</main>
-<section>
-  
-</section>
-
+    <h1 class="header h1">Full Stack Nerds Society</h1>
+    <img src="./assets/images/DevelopersUnite.png" alt="welcome visitor image" class="center" style="width:450px; height:400px;" />
+  <h2>Here at the Full Stack Nerds Society, we're happy that you've joined us!</h2>
+  <p>Please fill out the form below so we can keep in touch and inform you of upcoming events:</p>
+<form method="post" action='https://register-demo.freecodecamp.org'></form>
+<fieldset>
+  <label for="first-name"> First Name: <input id="first-name" name="first-name" type="text" required /></label>
+  <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+  <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+  <label for="phone">Phone Number: <input id="phone" name="phone" type="number" required /></label>
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>
 
 
 </body>
