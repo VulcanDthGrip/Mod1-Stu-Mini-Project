@@ -94,6 +94,9 @@ p {
     width: 75%;
 /* This begins adding size, style and function to form */
 }
+div {
+  text-align:center;
+}
 form {
     width: 60vw;
     max-width: 500px;
@@ -103,6 +106,7 @@ form {
   }
 
 fieldset {
+  text-align: center;
     border: none;
     padding:0;
     border-bottom: 3px solid #3b3b4f;
@@ -115,7 +119,7 @@ fieldset {
   input[type=text], select {
     width:35%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 auto;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -124,7 +128,7 @@ fieldset {
   input[type=number], select {
     width: 35%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 auto;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -133,7 +137,7 @@ fieldset {
   input[type=email], select {
     width: 35%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 auto;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -162,6 +166,7 @@ input, textarea {
     border-color: white;
     min-width: 300px;
   }
+
   
   /* Split the nav bar between the h1 tag and the links */
 .topnav {
