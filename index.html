@@ -9,28 +9,43 @@
 
 <body>
 
-  <div class="topnav">
-    <!-- adding nav bar -->
-    <h1>Full Stack Nerds Society</h1>
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+  <header>
+    <div class="topnav">
+      <h1>Full Stack Nerds Society</h1>
+      <!-- adding nav bar -->
+      <nav></nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#form">Contact Form</a>
+      <!-- <a href="page.html#anchor">text</a> will have to test out when pushed to github url -->
+    </nav>
+  </header>
+ 
     
   </div>
     <!-- inserted image here, postion in the center and make adjustment to size -->
-    <img src="./assets/images/DevelopersUnite.png" alt="welcome visitor image" class="center" style="width:450px; height:400px"; />
+    <figure>
+    <img src="./assets/images/DevelopersUnite.png" alt="welcome visitor image" class="center" style="width:650px; height:250px"; />
+    <figcaption>LLAP - Live Long and Prosper</figcaption>
+    </figure>
   <h2>Here at the Full Stack Nerds Society, we're happy that you've joined us!</h2>
-  <p>Please fill out the form below so we can keep in touch and inform you of upcoming events:</p>
+  <p>The FSNS is a national organization of like-minded developers who seek to learn, colaborate and share ideas on how to become better and more efficient and developing and writing code. But more importantly, a place for us to geek-out over our craft!!</p>
+  </div>
+  
 <!-- insert form here, make adjustment to size, color, height, width -->
 <form method="post" action='https://register-demo.freecodecamp.org'></form>
+<img src="./assets/images/AstronautPointing.gif" alt="astronaut pointing" class="center" style="width:200px; height:200px": />
+<h3>Contact Form</h3>
 <fieldset>
   <label for="first-name"> First Name: <input id="first-name" name="first-name" type="text" required /></label>
   <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
   <label for="email">Email: <input id="email" name="email" type="email" required /></label>
   <label for="phone">Phone Number: <input id="phone" name="phone" type="number" required /></label>
   </fieldset>
+  <!-- Insert submit button -->
   <input type="submit" value="Submit" />
 </form>
 
+<footer>Full Stack Nerds Society 2022</footer>
 
 </body>

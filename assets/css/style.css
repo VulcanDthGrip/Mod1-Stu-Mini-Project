@@ -12,17 +12,25 @@ body {
 
 
 .header {
-
+  text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    color: white;
 }
+
 h1 {
 font-size: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 float: left;
 }
 
 img{
-  padding: 30px;
+  padding: 0;
+}
+
+figcaption {
+  style: float-left;
+  padding-top: 0;
+  text-align: center;
 }
 
 h2 {
@@ -31,6 +39,12 @@ h2 {
     font-size: 20px;
     background-color: darkmagenta;
 }
+
+h3  {
+  text-align: center;
+  background-color: grey; 
+}
+
 .header h1 {
     position: fixed;
     font-size: 10px;
@@ -44,14 +58,6 @@ h2 {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 .center {
     display: block;
     margin-left: auto;
@@ -68,7 +74,6 @@ p {
     text-align: center;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(208, 127, 255);
 }
 
 .footer {
@@ -87,7 +92,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-
+/* This begins adding size, style and function to form */
 }
 form {
     width: 60vw;
@@ -96,9 +101,10 @@ form {
     margin: 0 auto;
     padding-bottom: 2em;
   }
+
 fieldset {
     border: none;
-    padding: 2rem 0;
+    padding:0;
     border-bottom: 3px solid #3b3b4f;
   }
   
@@ -106,19 +112,40 @@ fieldset {
     border-bottom: none;
   }
 
-  input,
-textarea,
-select {
-  margin: 6px 0 0 0;
-  width: 100%;
-  min-height: 2em;
-}
+  input[type=text], select {
+    width:35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=number], select {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 input, textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #ffffff;
 }
+
 .inline {
     width: unset;
     margin: 0 0.5em 0 0;
@@ -136,12 +163,13 @@ input, textarea {
     min-width: 300px;
   }
   
-  input[type="file"] {
-    padding: 1px 2px;
-  }
-  /* Add a black background color to the top navigation */
+  /* Split the nav bar between the h1 tag and the links */
 .topnav {
-  background-color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -152,7 +180,8 @@ input, textarea {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -165,4 +194,8 @@ input, textarea {
 .topnav a.active {
   background-color: green;
   color: white;
+}
+/* center the footer to the screen */
+footer {
+  text-align: center;
 }
